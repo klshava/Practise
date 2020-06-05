@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>SignUp FairShare</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />   
+    </head>
+    <body>
+
+        <div class="container">
+            <h1 class="brand">FairShare: Bill Sharing</h1>
+            <div class="wrapper animated bounceInLeft">
+                <div class="company-info">
+        
+        <div class="details">
+            <h3 id="action">Introduce Yourself</h3>
+
+            <form method="POST" action ='/api/users/signup'>
+              <p class="full">
+                <label>Hi, My Name Is </label>
+                <input type="text" name="name" id="name" placeholder="First Name" required>
+                <input type="text" name="surname" id="surname" placeholder="Last Name" required>
+              </p>
+              <p class="full">
+                <label>But You Can Call Me</label>
+                <input type="username" name="username" id="username" placeholder="Username" required>
+              </p>
+              <p class="full">
+                <label>Email Address</label>
+                <input type="email" name="email" id="email" placeholder="Enter Your Email" required>
+              </p>
+              <p class="full">
+                <label>Password</label>
+                <input type="password" name="password" id="password" placeholder="Enter Password"  required>
+                <input type="password" name="password2" id="password2" placeholder="Confirm Password" required>
+              </p>
+              <p class="full">
+                <button type="submit" id="signup" name="signup">Sign Up</button>
+              </p>
+            </form>
+        </div>
+
+                </div>
+            </div>
+        </div>
+        <p>Or Instead
+          <a href="/login"><button class="button button1">Login</button> </a> 
+        </p>
+      </div>
+            </div>
+        </div>
+      
+      <h4>By pressing Sign Up, you agree to these <a href="/terms"> Terms & Conditions</a> </h4>
+      
+      <script src="../public/js/signup.js"></script>
+    </body>
+
+
+</html>
